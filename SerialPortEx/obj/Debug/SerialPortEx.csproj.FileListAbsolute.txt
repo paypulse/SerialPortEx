@@ -1,0 +1,10 @@
+D:\SerialPortEx\SerialPortEx\bin\Debug\SerialPortEx.exe.config
+D:\SerialPortEx\SerialPortEx\bin\Debug\SerialPortEx.exe
+D:\SerialPortEx\SerialPortEx\bin\Debug\SerialPortEx.pdb
+D:\SerialPortEx\SerialPortEx\obj\Debug\SerialPortEx.csprojResolveAssemblyReference.cache
+D:\SerialPortEx\SerialPortEx\obj\Debug\SerialPortEx.Properties.Resources.resources
+D:\SerialPortEx\SerialPortEx\obj\Debug\SerialPortEx.csproj.GenerateResource.Cache
+D:\SerialPortEx\SerialPortEx\obj\Debug\SerialPortEx.csproj.CoreCompileInputs.cache
+D:\SerialPortEx\SerialPortEx\obj\Debug\SerialPortEx.exe
+D:\SerialPortEx\SerialPortEx\obj\Debug\SerialPortEx.pdb
+D:\SerialPortEx\SerialPortEx\obj\Debug\SerialPortEx.SerialComm_Load.resources
