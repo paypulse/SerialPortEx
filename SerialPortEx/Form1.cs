@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Windows.Forms;
+using System.Text;
+using System.IO;
 using System.IO.Ports;
 
 
@@ -117,24 +114,26 @@ namespace SerialPortEx
             cbComPort.DataSource = SerialPort.GetPortNames();
 
             //기타 셋팅 목록 기본값 선택
-            cbBaudRate.SelectedItem = 0;
-            cbDataSize.SelectedItem = 0;
-            cbParity.SelectedItem = 0;
-            cbHandShake.SelectedItem = 0;
+            cbBaudRate.SelectedIndex = 0;
+            cbDataSize.SelectedIndex = 0;
+            cbParity.SelectedIndex = 0;
+            cbHandShake.SelectedIndex = 0;
 
 
         }
 
         private void btConnectControl_Click(object sender, EventArgs e)
         {
+            
+
             if(!Port.IsOpen)
             {
                 // 현재 시리얼이 연결된 상태가 아니면 연결
-                Port.PortName = cbComPort.SelectedItem.ToString();
-                Port.BaudRate = Convert.ToInt32(cbBaudRate.SelectedItem);
+                Port.PortName =  cbComPort.SelectedItem.ToString();
+                Port.BaudRate =  Convert.ToInt32(cbBaudRate.SelectedItem);
                 Port.DataBits = Convert.ToInt32(cbDataSize.SelectedItem);
                 Port.Parity = (Parity)cbParity.SelectedIndex;
-                Port.Handshake = (Handshake)cbHandShake.SelectedItem;
+                Port.Handshake = (Handshake)cbHandShake.SelectedIndex;
 
                 try
                 {
